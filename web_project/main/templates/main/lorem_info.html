@@ -1,8 +1,10 @@
 {% extends 'main/layout.html' %}
 
-{% block title %}Русские панграммы{% endblock %}
+{% block title %}{{ caption }}{% endblock %}
 
 {% block content %}
+{% include 'main/nav_bar.html' with info=option %}
+
 <div class="content_box">
    <p>Невероятно, но фактически «Lorem ipsum» — это текст-заполнитель, который широко<br>
       используется в печатной и веб индустрии. Его основная функция — предоставить<br>

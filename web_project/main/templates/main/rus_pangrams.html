@@ -1,8 +1,10 @@
 {% extends 'main/layout.html' %}
 
-{% block title %}Что такое Lorem ipsum{% endblock %}
+{% block title %}{{ caption }}{% endblock %}
 
 {% block content %}
+{% include 'main/nav_bar.html' with pan_rus=option %}
+
 <div class="content_box">
     <p>В русском языке панграммы играют важную роль в различных сферах, от демонстрации<br>
         шрифтов до тестирования клавиатур. Эти фразы позволяют оценить, как выглядят и<br>

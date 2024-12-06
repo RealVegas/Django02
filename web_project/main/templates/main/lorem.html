@@ -1,8 +1,10 @@
 {% extends 'main/layout.html' %}
 
-{% block title %}Lorem ipsum{% endblock %}
+{% block title %}{{ caption }}{% endblock %}
 
 {% block content %}
+{% include 'main/nav_bar.html' with index=option %}
+
 <div class="content_box">
   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do<br>
     eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut<br>

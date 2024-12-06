@@ -1,8 +1,10 @@
 {% extends 'main/layout.html' %}
 
-{% block title %}Английские панграммы{% endblock %}
+{% block title %}{{ caption }}{% endblock %}
 
 {% block content %}
+{% include 'main/nav_bar.html' with pan_eng=option %}
+
 <div class="content_box">
     <p>Здесь стоит рассмотреть аспекты касающиеся не макетов страниц,<br>
         а непосредственно представления шрифтов. Речь пойдёт о панграммах.<br>
