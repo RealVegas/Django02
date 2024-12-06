@@ -4,8 +4,7 @@ from . import views
 
 urlpatterns = [
     path('', views.index, name='index'),
-    path('second', views.second, name='second page'),
-    path('third', views.third, name='third page'),
-    path('forth', views.forth, name='forth page'),
-    path('fifth', views.fifth, name='fifth page')
+    path('info', views.info, name='info'),
+    path('pan_eng', views.pan_eng, name='pan_eng'),
+    path('pan_rus', views.pan_rus, name='pan_rus')
 ]

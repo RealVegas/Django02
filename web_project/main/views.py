@@ -1,22 +1,15 @@
 from django.shortcuts import render
 # from django.http import HttpResponse
 
-
 # Create your views here.
 def index(request):
-    return render(request, 'main/index.html')
+    return render(request, 'main/lorem.html')
 
-# def second(request):
-#     return HttpResponse('<h2>This is the second page of Django Project</h2>')
-#
-#
-# def third(request):
-#     return HttpResponse('<h3>This is the third page of Django Project</h3>')
-#
-#
-# def forth(request):
-#     return HttpResponse('<h4>This is the forth page of Django Project</h4>')
-#
-#
-# def fifth(request):
-#     return HttpResponse('<h5>This is the fifth page of Django Project</h5>')
+def info(request):
+    return render(request, 'main/lorem_info.html')
+
+def pan_eng(request):
+    return render(request, 'main/eng_pangrams.html')
+
+def pan_rus(request):
+    return render(request, 'main/rus_pangrams.html')
